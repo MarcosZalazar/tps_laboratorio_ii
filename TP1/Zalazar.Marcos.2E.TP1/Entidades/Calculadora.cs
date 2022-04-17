@@ -5,7 +5,7 @@ namespace Entidades
     public static class Calculadora
     {
         /// <summary>
-        /// Realiza la operación aritmética elegida por el usuario
+        /// Realiza la operación aritmética seleccionada por el usuario
         /// </summary>
         /// <param name="num1"> Primer operando </param>
         /// <param name="num2"> Segundo operando </param>

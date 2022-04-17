@@ -9,6 +9,23 @@ namespace Entidades
     public class Operando
     {
         private double numero;
+
+        public Operando()
+        {
+            this.numero = 0;
+        }
+        public Operando(double numero)
+        {
+            this.numero = numero;
+        }
+        public Operando(string strNumero)
+        {
+            this.Numero = strNumero;
+        }
+
+        /// <summary>
+        /// Propiedad que asigna un valor al atributo numero
+        /// </summary>
         public string Numero
         {
             set
@@ -45,7 +62,7 @@ namespace Entidades
             string binarioString = "Valor inválido";
             int binarioADevolver;
 
-            binarioADevolver=Math.Abs(Convert.ToInt32(numero));
+            binarioADevolver= Math.Abs((Convert.ToInt32(numero)));
 
             if (binarioADevolver >=0)
             {
@@ -66,7 +83,7 @@ namespace Entidades
 
             if (Double.TryParse(numero, out binarioADevolver))
             {
-                binarioString = DecimalBinario(Math.Abs(binarioADevolver));
+                binarioString = DecimalBinario(Math.Floor(Math.Abs(binarioADevolver)));
  
             }
             return binarioString;
@@ -90,26 +107,34 @@ namespace Entidades
             }
             return esBinario;
         }
-        public Operando()
-        {
-            this.numero = 0;
-        }
-        public Operando(double numero)
-        {
-            this.numero = numero; 
-        }
-        public Operando(string strNumero)
-        {
-            this.Numero = strNumero;
-        }
+
+        /// <summary>
+        /// Realiza la resta de dos valores del tipo Operando recibidos como parámetros
+        /// </summary>
+        /// <param name="n1"> Primer operando</param>
+        /// <param name="n2"> Segundo operando</param>
+        /// <returns> Devuelve el resultado de la resta</returns>
         public static double operator - (Operando n1, Operando n2)
         {
             return n1.numero - n2.numero;
         }
+        /// <summary>
+        /// Realiza la multiplicación de dos valores del tipo Operando recibidos como parámetros
+        /// </summary>
+        /// <param name="n1">Primer operando</param>
+        /// <param name="n2">Segundo operando</param>
+        /// <returns>Devuelve el resultado de la multiplicación</returns>
         public static double operator * (Operando n1, Operando n2)
         {
             return n1.numero * n2.numero;
         }
+        /// <summary>
+        /// Realiza la divísión de dos valores del tipo Operando recibidos como parámetros. 
+        /// Si el segundo operando es igual a cero, devuelve el MinValue, indicando de que no se pudo realizar la operación.
+        /// </summary>
+        /// <param name="n1">Primer operando</param>
+        /// <param name="n2">Segundo operando</param>
+        /// <returns>Devuelve el resultado de la división</returns>
         public static double operator / (Operando n1, Operando n2)
         {
             double resultado;
@@ -125,12 +150,18 @@ namespace Entidades
 
             return resultado;
         }
+        /// <summary>
+        /// Realiza la suma de dos valores del tipo Operando recibidos como parámetros
+        /// </summary>
+        /// <param name="n1">Primer operando</param>
+        /// <param name="n2">Segundo operando</param>
+        /// <returns>Devuelve el resultado de la suma</returns>
         public static double operator + (Operando n1, Operando n2)
         {
             return n1.numero + n2.numero;
         }
         /// <summary>
-        /// Validará que el parámetro recibido sea un número
+        /// Valida que el parámetro recibido sea un número
         /// </summary>
         /// <param name="strNumero"> parámetro a validar </param>
         /// <returns> numeroADevolver= número en formato double o "0" en caso de que no sea un número </returns>

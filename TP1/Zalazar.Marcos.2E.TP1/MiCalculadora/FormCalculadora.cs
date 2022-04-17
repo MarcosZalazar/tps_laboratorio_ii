@@ -68,6 +68,14 @@ namespace MiCalculadora
             {
                 cmbOperador.Text = "+";
             }
+            if (txtNumero1.Text == "")
+            {
+                txtNumero1.Text = "0";
+            }
+            if (txtNumero2.Text == "")
+            {
+                txtNumero2.Text = "0";
+            }
             if (resultado == double.MinValue)
             {
                 lblResultado.Text = "Valor inválido";
@@ -81,7 +89,7 @@ namespace MiCalculadora
         }
 
         /// <summary>
-        /// Recibe los números y la operación aritmética seleccionada y realiza el cálculo correspondiente
+        /// Recibe los operandos y la operación aritmética seleccionada. Con estos parámetros, realiza el cálculo aritmético correspondiente
         /// </summary>
         /// <param name="numero1"> Primer Operando </param>
         /// <param name="numero2"> Segundo Operando </param>
