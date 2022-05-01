@@ -11,11 +11,14 @@ namespace Entidades
     /// </summary>
     public sealed class Taller
     {
-        List<Vehiculo> vehiculos;
-        int espacioDisponible;
+        private List<Vehiculo> vehiculos;
+        private int espacioDisponible;
         public enum ETipo
         {
-            Ciclomotor, Sedan, SUV, Todos
+            Ciclomotor, 
+            Sedan, 
+            SUV, 
+            Todos
         }
 
         #region "Constructores"
@@ -31,9 +34,9 @@ namespace Entidades
 
         #region "Sobrecargas"
         /// <summary>
-        /// Muestro el estacionamiento y TODOS los vehículos
+        /// Muestro el taller y TODOS los vehículos
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Los datos del taller y todos sus vehículos</returns>
         public override string ToString()
         {
             return Listar(this, ETipo.Todos);
@@ -43,12 +46,12 @@ namespace Entidades
         #region "Métodos"
 
         /// <summary>
-        /// Expone los datos del elemento y su lista (incluidas sus herencias)
+        /// Expone los datos del taller y su lista (incluidas sus herencias)
         /// SOLO del tipo requerido
         /// </summary>
-        /// <param name="taller">Elemento a exponer</param>
+        /// <param name="taller">Taller a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
-        /// <returns></returns>
+        /// <returns>Información del taller y todos sus vehículos</returns>
         public static string Listar(Taller taller, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
@@ -60,13 +63,22 @@ namespace Entidades
                 switch (tipo)
                 {
                     case ETipo.Ciclomotor:
-                        sb.AppendLine(v.Mostrar());
+                        if (v is Ciclomotor)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     case ETipo.Sedan:
-                        sb.AppendLine(v.Mostrar());
+                        if (v is Sedan)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     case ETipo.SUV:
-                        sb.AppendLine(v.Mostrar());
+                        if (v is Suv)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     default:
                         sb.AppendLine(v.Mostrar());
@@ -80,11 +92,11 @@ namespace Entidades
 
         #region "Operadores"
         /// <summary>
-        /// Agregará un elemento a la lista
+        /// Agregará un vehículo a la lista si existe espacio disponible y el vehículo no se encuentre en la lista
         /// </summary>
         /// <param name="taller">Objeto donde se agregará el elemento</param>
         /// <param name="vehiculo">Objeto a agregar</param>
-        /// <returns></returns>
+        /// <returns> El taller con el vehpiculo agregado. Si no se pudo agregar, retornará el taller sin modificaciones</returns>
         public static Taller operator +(Taller taller, Vehiculo vehiculo)
         {
             if (!(taller is null) && !(vehiculo is null) && (taller.vehiculos.Count < taller.espacioDisponible))
@@ -101,7 +113,7 @@ namespace Entidades
             return taller;
         }
         /// <summary>
-        /// Quitará un elemento de la lista
+        /// Quitará un vehículo de la lista si el vehículo se encuentra en la lista de vehículos. De lo contrario, devolverá el taller sin modificaciones
         /// </summary>
         /// <param name="taller">Objeto donde se quitará el elemento</param>
         /// <param name="vehiculo">Objeto a quitar</param>

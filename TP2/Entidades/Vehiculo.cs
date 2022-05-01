@@ -13,11 +13,19 @@ namespace Entidades
     {
         public enum EMarca
         {
-            Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
+            Chevrolet, 
+            Ford, 
+            Renault, 
+            Toyota, 
+            BMW, 
+            Honda, 
+            HarleyDavidson
         }
         public enum ETamanio
         {
-            Chico, Mediano, Grande
+            Chico, 
+            Mediano, 
+            Grande
         }
 
         private EMarca marca;
@@ -32,19 +40,23 @@ namespace Entidades
         }
 
         /// <summary>
-        /// ReadOnly: Retornará el tamaño
+        /// Propiedad abstracta de solo lectura: Retornará el tamaño del vehículo
         /// </summary>
         protected abstract ETamanio Tamanio { get;}
 
         /// <summary>
         /// Publica todos los datos del Vehiculo.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Los datos del vehículo</returns>
         public virtual string Mostrar()
         {
             return (string)this;
         }
 
+        /// <summary>
+        /// Convierte explicitamente un objeto del tipo vehículo a una cadena string que detalla los datos del vehículo
+        /// </summary>
+        /// <param name="p"> Un vehículo</param>
         public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();
@@ -61,18 +73,22 @@ namespace Entidades
         /// Dos vehiculos son iguales si comparten el mismo chasis
         /// </summary>
         /// <param name="v1"></param>
-        /// <param name="v2"></param>
-        /// <returns></returns>
+        /// <param name="v2">Segundo vehículo</param>
+        /// <returns> Devuelve "true" si los chasis coinciden y false si no coinciden </returns>
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
-            return (v1.chasis == v2.chasis);
+            if (!(v1 is null) && !(v2 is null))
+            {
+                return (v1.chasis == v2.chasis);
+            }
+            return false;
         }
         /// <summary>
         /// Dos vehiculos son distintos si su chasis es distinto
         /// </summary>
-        /// <param name="v1"></param>
-        /// <param name="v2"></param>
-        /// <returns></returns>
+        /// <param name="v1">Primer vehículo</param>
+        /// <param name="v2">Segundo vehículo</param>
+        /// <returns>Devuelve "true" si los chasis no coinciden y false si coinciden</returns>
         public static bool operator !=(Vehiculo v1, Vehiculo v2)
         {
             return !(v1 == v2);

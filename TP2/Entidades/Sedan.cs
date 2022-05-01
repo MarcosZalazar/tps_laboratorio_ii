@@ -10,16 +10,13 @@ namespace Entidades
 {
     public class Sedan : Vehiculo
     {
-        public enum ETipo { CuatroPuertas, CincoPuertas }
+        public enum ETipo 
+        { CuatroPuertas, 
+          CincoPuertas 
+        }
         
         ETipo tipo;
 
-        /// <summary>
-        /// Por defecto, TIPO será CuatroPuertas
-        /// </summary>
-        /// <param name="marca"></param>
-        /// <param name="chasis"></param>
-        /// <param name="color"></param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color)
             : base(chasis, marca, color)
         {
@@ -33,7 +30,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Sedan son 'Mediano'
+        /// Propiedad de solo lectura: Por defecto, los sedan son de tamaño 'Mediano'
         /// </summary>
         protected override ETamanio Tamanio
         {
@@ -43,6 +40,10 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Publica todos los datos del sedan. 
+        /// </summary>
+        /// <returns>Los datos completos del sedan</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

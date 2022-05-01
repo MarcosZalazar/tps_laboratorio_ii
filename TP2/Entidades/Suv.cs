@@ -13,16 +13,20 @@ namespace Entidades
         {
         }
         /// <summary>
-        /// SUV son 'Grande'
+        /// Propiedad de solo lectura: Por defecto, los suv son de tamaño 'Grande'
         /// </summary>
         protected override ETamanio Tamanio
         {
             get
             {
-                return 0;
+                return ETamanio.Grande;
             }
         }
 
+        /// <summary>
+        /// Publica todos los datos del suv. 
+        /// </summary>
+        /// <returns>Los datos completos del suv</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

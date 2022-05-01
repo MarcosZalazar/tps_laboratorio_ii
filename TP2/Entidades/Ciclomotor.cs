@@ -14,16 +14,20 @@ namespace Entidades
         }
         
         /// <summary>
-        /// Ciclomotor son 'Chico'
+        /// Propiedad de solo lectura: Por defecto, los ciclomotores son de tamaño 'Chico'
         /// </summary>
         protected override ETamanio Tamanio
         {
             get
             {
-                return 0;
+                return ETamanio.Chico;
             }
         }
 
+        /// <summary>
+        /// Publica todos los datos del ciclomotor. 
+        /// </summary>
+        /// <returns>Los datos completos del ciclomotor</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
