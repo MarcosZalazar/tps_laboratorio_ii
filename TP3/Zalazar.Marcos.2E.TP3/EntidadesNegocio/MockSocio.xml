@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfSocio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Socio>
-    <listaActividades>
-      <Actividades>GimnasioLibre</Actividades>
-      <Actividades>Aerobics</Actividades>
-    </listaActividades>
-    <DniSocio>234</DniSocio>
-    <Nombre>marc</Nombre>
-    <Apellido>aza</Apellido>
+    <DniSocio>31661766</DniSocio>
+    <Nombre>Pablo</Nombre>
+    <Apellido>Picasso</Apellido>
     <Sexo>Masculino</Sexo>
-    <FechaDeAlta>2022-06-05T23:53:14.2032714-03:00</FechaDeAlta>
+    <FechaDeAlta>2003-06-05T22:24:04.5159858-03:00</FechaDeAlta>
     <Membresia>Black</Membresia>
     <ListaActividades>
       <Actividades>GimnasioLibre</Actividades>

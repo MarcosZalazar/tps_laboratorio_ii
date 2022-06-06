@@ -81,3 +81,5 @@ C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net
 C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.dll
 C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.pdb
 C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarEgresos.resources
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\MockProfesores.xml
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\MockSocio.xml

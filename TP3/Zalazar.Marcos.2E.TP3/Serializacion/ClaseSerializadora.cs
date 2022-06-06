@@ -9,8 +9,7 @@ namespace Serializacion
         static string path;
         static ClaseSerializadora()
         {
-            path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            path += @"\Mock\";
+            path = AppDomain.CurrentDomain.BaseDirectory;
         }
 
         /// <summary>

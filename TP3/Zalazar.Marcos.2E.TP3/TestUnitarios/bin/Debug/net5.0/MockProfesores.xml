@@ -9,13 +9,4 @@
     <Salario>500</Salario>
     <Actividad>GimnasioLibre</Actividad>
   </Profesor>
-  <Profesor>
-    <Dni>345</Dni>
-    <Nombre>fg</Nombre>
-    <Apellido>dfg</Apellido>
-    <Sexo>Masculino</Sexo>
-    <FechaDeContratacion>2022-06-06T01:13:21.4553737-03:00</FechaDeContratacion>
-    <Salario>3455</Salario>
-    <Actividad>GimnasioLibre</Actividad>
-  </Profesor>
 </ArrayOfProfesor>

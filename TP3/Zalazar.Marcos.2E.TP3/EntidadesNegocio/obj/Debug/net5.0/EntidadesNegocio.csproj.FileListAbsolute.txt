@@ -34,3 +34,5 @@ C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\ob
 C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\refint\EntidadesNegocio.dll
 C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.pdb
 C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\ref\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\MockProfesores.xml
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\MockSocio.xml

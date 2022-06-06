@@ -14,8 +14,7 @@ namespace Serializacion
 
         static ClaseSerializadoraJson()
         {
-            path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            path += @"\Archivos-Serializacion\";
+            path = AppDomain.CurrentDomain.BaseDirectory;
         }
 
         /// <summary>

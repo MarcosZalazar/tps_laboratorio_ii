@@ -100,3 +100,5 @@ C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\TestUnitarios\obj\Debu
 C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\TestUnitarios\obj\Debug\net5.0\TestUnitarios.pdb
 C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\TestUnitarios\obj\Debug\net5.0\TestUnitarios.genruntimeconfig.cache
 C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\TestUnitarios\obj\Debug\net5.0\ref\TestUnitarios.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\TestUnitarios\bin\Debug\net5.0\MockProfesores.xml
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\TestUnitarios\bin\Debug\net5.0\MockSocio.xml
