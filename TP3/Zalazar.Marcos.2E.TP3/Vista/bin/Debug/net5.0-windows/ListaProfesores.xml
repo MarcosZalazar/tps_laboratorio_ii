@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProfesor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profesor>
+    <Dni>345324343</Dni>
+    <Nombre>Juan</Nombre>
+    <Apellido>Lopez</Apellido>
+    <Sexo>Masculino</Sexo>
+    <FechaDeContratacion>2001-06-05T22:24:11.378798-03:00</FechaDeContratacion>
+    <Salario>500</Salario>
+    <Actividad>GimnasioLibre</Actividad>
+  </Profesor>
+  <Profesor>
+    <Dni>345</Dni>
+    <Nombre>fg</Nombre>
+    <Apellido>dfg</Apellido>
+    <Sexo>Masculino</Sexo>
+    <FechaDeContratacion>2022-06-06T01:13:21.4553737-03:00</FechaDeContratacion>
+    <Salario>3455</Salario>
+    <Actividad>GimnasioLibre</Actividad>
+  </Profesor>
+</ArrayOfProfesor>
