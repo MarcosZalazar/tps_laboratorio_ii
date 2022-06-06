@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Vista/1.0.0": {
+        "dependencies": {
+          "EntidadesNegocio": "1.0.0",
+          "GimnasioException": "1.0.0",
+          "Serializacion": "1.0.0"
+        },
+        "runtime": {
+          "Vista.dll": {}
+        }
+      },
+      "EntidadesNegocio/1.0.0": {
+        "runtime": {
+          "EntidadesNegocio.dll": {}
+        }
+      },
+      "GimnasioException/1.0.0": {
+        "runtime": {
+          "GimnasioException.dll": {}
+        }
+      },
+      "Serializacion/1.0.0": {
+        "runtime": {
+          "Serializacion.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vista/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntidadesNegocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GimnasioException/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Serializacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

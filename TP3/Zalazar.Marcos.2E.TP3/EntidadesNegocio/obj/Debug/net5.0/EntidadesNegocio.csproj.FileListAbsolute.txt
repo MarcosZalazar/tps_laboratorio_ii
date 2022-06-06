@@ -1,0 +1,36 @@
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.deps.json
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\refint\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\ref\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.deps.json
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\refint\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\ref\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.deps.json
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\refint\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\EntidadesNegocio\obj\Debug\net5.0\ref\EntidadesNegocio.dll
