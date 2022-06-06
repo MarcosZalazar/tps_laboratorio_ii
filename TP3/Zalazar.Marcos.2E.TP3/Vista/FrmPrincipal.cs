@@ -229,15 +229,15 @@ namespace Vista
             if (frmAgregarEgreso.DevolverEgreso is not null && resultado == DialogResult.OK)
             {
                 this.gimnasio.PeriodoComercial.Egresos.Add(frmAgregarEgreso.DevolverEgreso);
-                ClaseSerializadora<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
-                //this.RefrescarLista();
+                ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
                 MessageBox.Show("Egreso agregado", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
         private void btnImportarEgresos_Click(object sender, EventArgs e)
         {
-            ClaseSerializadora<List<Socio>>.Leer(nombreArchivoEgreso);
+            this.gimnasio.PeriodoComercial.Egresos=ClaseSerializadoraJson<List<Egreso>>.Leer(nombreArchivoEgreso);
+            MessageBox.Show("Egreso importado con éxito", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
     }
 }

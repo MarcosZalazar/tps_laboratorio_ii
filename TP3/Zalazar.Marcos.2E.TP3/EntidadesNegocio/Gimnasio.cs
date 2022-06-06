@@ -149,7 +149,7 @@ namespace EntidadesNegocio
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine($"Total de socios Black: {this.ContarSociosBlack()}  ");
-            sb.AppendLine($"Total de socios Smart: {this.ContarSociosBlack()}  ");
+            sb.AppendLine($"Total de socios Smart: {this.ContarSociosSmart()}  ");
             sb.AppendLine($"Total de socios: {this.ListaSocios.Count}  ");
             sb.AppendLine($"---------------------------------------------------");
             sb.AppendLine($"Total de ingresos: {this.CalcularTotalIngresos()}  ");
