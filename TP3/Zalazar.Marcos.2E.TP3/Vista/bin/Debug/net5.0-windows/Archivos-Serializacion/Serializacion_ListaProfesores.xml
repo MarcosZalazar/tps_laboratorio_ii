@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProfesor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profesor>
+    <Dni>345</Dni>
+    <Nombre>dsfs</Nombre>
+    <Apellido>sdf</Apellido>
+    <Sexo>Masculino</Sexo>
+    <FechaDeContratacion>2022-06-05T23:53:22.8095891-03:00</FechaDeContratacion>
+    <Salario>35</Salario>
+    <Actividad>GimnasioLibre</Actividad>
+  </Profesor>
+</ArrayOfProfesor>

@@ -34,12 +34,28 @@ namespace Vista
         {
             InitializeComponent();
             this.gimnasio = new Gimnasio("Espartanos");
-            
+
         }
         private void FrmPrincipalDeSocio_Load(object sender, EventArgs e)
         {
-            this.gimnasio.ListaSocios = ClaseSerializadora<List<Socio>>.Leer(nombreArchivo);
-            this.gimnasio.ListaProfesores = ClaseSerializadora<List<Profesor>>.Leer(nombreArchivoProfesor);
+            if (File.Exists(nombreArchivo))
+            {
+                this.gimnasio.ListaSocios = ClaseSerializadora<List<Socio>>.Leer(nombreArchivo);
+            }
+            else
+            {
+                this.gimnasio.ListaSocios = ClaseSerializadora<List<Socio>>.Leer("MockSocio.xml");
+            }
+
+            if (File.Exists(nombreArchivoProfesor))
+            {
+                this.gimnasio.ListaProfesores = ClaseSerializadora<List<Profesor>>.Leer(nombreArchivoProfesor);
+            }
+            else
+            {
+                this.gimnasio.ListaProfesores = ClaseSerializadora<List<Profesor>>.Leer("MockProfesores.xml");
+            }
+
             RefrescarLista();
         }
         private void RefrescarLista()
@@ -208,7 +224,7 @@ namespace Vista
             if (frmAgregarEgreso.DevolverEgreso is not null && resultado == DialogResult.OK)
             {
                 this.gimnasio.PeriodoComercial.Egresos.Add(frmAgregarEgreso.DevolverEgreso);
-                //ClaseSerializadora<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
+                ClaseSerializadora<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
                 //this.RefrescarLista();
                 MessageBox.Show("Egreso agregado", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
