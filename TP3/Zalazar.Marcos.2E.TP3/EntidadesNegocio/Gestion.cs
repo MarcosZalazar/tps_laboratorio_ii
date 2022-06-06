@@ -16,6 +16,9 @@ namespace EntidadesNegocio
             this.egresos = new List<T>();
             this.ingresos = new List<U>();
         }
+        /// <summary>
+        /// Propiedad que asigna y devuelve la lista de egresos
+        /// </summary>
         public List<T> Egresos
         {
             get
@@ -28,6 +31,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve la lista de ingresos
+        /// </summary>
         public List<U> Ingresos
         {
             get
@@ -39,6 +45,11 @@ namespace EntidadesNegocio
                 this.ingresos = value;
             }
         }
+        /// <summary>
+        /// Agrega un egreso a la lista
+        /// </summary>
+        /// <param name="gestion">lista genérica</param>
+        /// <param name="egreso"> egreso</param>
         public void AgregarEgreso (Gestion<T, U> gestion, T egreso)
         {
             if (gestion is not null && egreso is not null)
@@ -46,7 +57,11 @@ namespace EntidadesNegocio
                 gestion.egresos.Add(egreso);
             }
         }
-
+        /// <summary>
+        /// Agrega un ingreso a la lista
+        /// </summary>
+        /// <param name="gestion">lista genérica</param>
+        /// <param name="ingreso">ingreso</param>
         public void AgregarIngreso(Gestion<T, U> gestion, U ingreso)
         {
             if (gestion is not null && ingreso is not null)

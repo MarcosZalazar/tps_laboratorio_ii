@@ -29,6 +29,10 @@ namespace EntidadesNegocio
             this.membresia = membresia;
             this.listaActividades = new List<ECampos.Actividades>();
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve el dni del socio
+        /// </summary>
         public int DniSocio
         { 
             get 
@@ -41,6 +45,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve el nombre del socio
+        /// </summary>
         public string Nombre
         {
             get
@@ -52,6 +59,10 @@ namespace EntidadesNegocio
                 this.nombre = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve el apellido del socio
+        /// </summary>
         public string Apellido
         {
             get
@@ -64,6 +75,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve el sexo del socio
+        /// </summary>
         public ECampos.ESexo Sexo
         {
             get
@@ -75,6 +89,10 @@ namespace EntidadesNegocio
                 this.sexo = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve la fecha de alta del socio
+        /// </summary>
         public DateTime FechaDeAlta
         {
             get
@@ -86,6 +104,10 @@ namespace EntidadesNegocio
                 this.fechaDeAlta = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve la membresia contratad por el socio
+        /// </summary>
         public ECampos.EMembresia Membresia
         {
             get
@@ -97,6 +119,10 @@ namespace EntidadesNegocio
                 this.membresia = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve la actividad elegida por el socio
+        /// </summary>
         public List<ECampos.Actividades> ListaActividades
         {
             get
@@ -109,6 +135,10 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Método que devuelve los datos del socio
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();

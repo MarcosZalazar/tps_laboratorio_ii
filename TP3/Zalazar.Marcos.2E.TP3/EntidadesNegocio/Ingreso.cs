@@ -17,6 +17,9 @@ namespace EntidadesNegocio
             this.importe = importe;
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve el valor al atributo concepto
+        /// </summary>
         public string Concepto
         {
             get
@@ -28,6 +31,10 @@ namespace EntidadesNegocio
                 this.concepto = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve el valor al atributo importe
+        /// </summary>
         public int Importe
         {
             get

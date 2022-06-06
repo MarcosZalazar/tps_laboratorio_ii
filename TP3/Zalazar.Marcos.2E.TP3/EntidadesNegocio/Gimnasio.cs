@@ -22,6 +22,9 @@ namespace EntidadesNegocio
         {
             this.nombre = nombre;
         }
+        /// <summary>
+        /// Propiedad que asigna y devuelve el nombre del gimnasio
+        /// </summary>
         public string Nombre
         {
             get
@@ -34,6 +37,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve la lista de profesores
+        /// </summary>
         public List<Profesor> ListaProfesores
         {
             get
@@ -45,6 +51,10 @@ namespace EntidadesNegocio
                 this.listaProfesores = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve la lista de socios
+        /// </summary>
         public List<Socio> ListaSocios
         {
             get
@@ -57,6 +67,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve el periodo comercial
+        /// </summary>
         public Gestion<Egreso, Ingreso> PeriodoComercial
         {
             get
@@ -69,6 +82,11 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Método que imprime la ficha del socio del gimnasio
+        /// </summary>
+        /// <param name="socio"> un objeto del tipo socio</param>
+        /// <returns></returns>
         public string ImprimirFichaDelSocio(Socio socio)
         {
             StringBuilder sb = new StringBuilder();
@@ -82,6 +100,10 @@ namespace EntidadesNegocio
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Calcula el total de ingresos en función del valor de las cuotas
+        /// </summary>
+        /// <returns></returns>
         public int CalcularTotalIngresos()
         {
             int totalIngresos=0;
@@ -100,6 +122,10 @@ namespace EntidadesNegocio
             return totalIngresos;
         }
 
+        /// <summary>
+        /// Cuenta la cantidad de socios Black
+        /// </summary>
+        /// <returns></returns>
         public int ContarSociosBlack()
         {
             int cantidadSociosBlack = 0;
@@ -114,6 +140,10 @@ namespace EntidadesNegocio
             return cantidadSociosBlack;
         }
 
+        /// <summary>
+        /// Cuenta la cantidad de socios Smart
+        /// </summary>
+        /// <returns></returns>
         public int ContarSociosSmart()
         {
             int cantidadSociosSmart = 0;
@@ -128,6 +158,10 @@ namespace EntidadesNegocio
             return cantidadSociosSmart;
         }
 
+        /// <summary>
+        /// Calcular el total de egresos
+        /// </summary>
+        /// <returns></returns>
         public int CalcularTotalEgresos()
         {
             int totalEgresos = 0;
@@ -139,11 +173,19 @@ namespace EntidadesNegocio
             
             return totalEgresos;
         }
+        /// <summary>
+        /// Calcula el resultado del periodo comercial
+        /// </summary>
+        /// <returns></returns>
         public int CalcularResultadoDelMes()
         {
             return this.CalcularTotalIngresos()-this.CalcularTotalEgresos();
         }
 
+        /// <summary>
+        /// Provee los datos de los principales indicadores del negocio
+        /// </summary>
+        /// <returns></returns>
         public string InformacionGestion()
         {
             StringBuilder sb = new StringBuilder();

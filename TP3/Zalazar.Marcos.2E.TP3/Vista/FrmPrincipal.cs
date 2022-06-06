@@ -38,6 +38,11 @@ namespace Vista
             this.gimnasio = new Gimnasio("Espartanos");
         }
 
+        /// <summary>
+        /// Carga a un socio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmPrincipalDeSocio_Load(object sender, EventArgs e)
         {
             
@@ -63,6 +68,10 @@ namespace Vista
 
             RefrescarLista();
         }
+
+        /// <summary>
+        /// Actualiza las listas
+        /// </summary>
         private void RefrescarLista()
         {
             this.lstSocios.DataSource = null;
@@ -71,6 +80,11 @@ namespace Vista
             this.lstProfesores.DataSource = this.gimnasio.ListaProfesores;
         }
 
+        /// <summary>
+        /// Agrega a un socio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarAlSocio_Click(object sender, EventArgs e)
         {
             FrmAgregarModificarSocio frmAgregarModificarSocio = new FrmAgregarModificarSocio("Agregar socio", "Agregar", null);
@@ -85,6 +99,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// MOdifica a un socio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificarAlSocio_Click(object sender, EventArgs e)
         {
             Socio socioSeleccionado = (Socio) this.lstSocios.SelectedItem;
@@ -109,6 +128,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Elimina a un socio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminarAlSocio_Click(object sender, EventArgs e)
         {
             Socio socioSeleccionado = (Socio)this.lstSocios.SelectedItem;
@@ -126,6 +150,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Imprime una ficha
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnImprimirFicha_Click(object sender, EventArgs e)
         {
             Socio socioSeleccionado = (Socio)this.lstSocios.SelectedItem;
@@ -143,6 +172,10 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Muestra mensajes de error
+        /// </summary>
+        /// <param name="ex"></param>
         private void MostrarMensajeDeError(Exception ex)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -154,6 +187,11 @@ namespace Vista
             MessageBox.Show(stringBuilder.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        /// <summary>
+        /// Agrega a un profesor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregarProfesor_Click(object sender, EventArgs e)
         {
             FrmAgregarModificarProfesores frmAgregarModificarProfesor = new FrmAgregarModificarProfesores("Agregar profesor", "Agregar", null);
@@ -168,6 +206,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Modifica a un profesor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModificarProfesor_Click(object sender, EventArgs e)
         {
             Profesor profesorSeleccionado = (Profesor)this.lstProfesores.SelectedItem;
@@ -193,6 +236,11 @@ namespace Vista
 
         }
 
+        /// <summary>
+        /// Elimina a un profesor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminarProfesor_Click(object sender, EventArgs e)
         {
             Profesor profesorSeleccionado = (Profesor)this.lstProfesores.SelectedItem;
@@ -211,16 +259,31 @@ namespace Vista
 
         }
 
+        /// <summary>
+        /// Muestra por pantalla la informacion de gestion del gimnasio
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMostrarInfoGestion_Click(object sender, EventArgs e)
         {
             this.rtbGestion.Text=this.gimnasio.InformacionGestion();
         }
 
+        /// <summary>
+        /// Limpia el informe de gestion de la pantalla
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiarInforme_Click(object sender, EventArgs e)
         {
             this.rtbGestion.Text = "";
         }
 
+        /// <summary>
+        /// Registra manualmente egresos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnRegistrarEgresos_Click(object sender, EventArgs e)
         {
             FrmAgregarEgresos frmAgregarEgreso = new FrmAgregarEgresos(null);
@@ -234,6 +297,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Importa un archivo de egresos en formato Json
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnImportarEgresos_Click(object sender, EventArgs e)
         {
             this.gimnasio.PeriodoComercial.Egresos=ClaseSerializadoraJson<List<Egreso>>.Leer(nombreArchivoEgreso);

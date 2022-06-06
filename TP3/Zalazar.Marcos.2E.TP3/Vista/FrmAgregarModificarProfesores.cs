@@ -23,6 +23,12 @@ namespace Vista
             this.btnAceptarProf.Text = operacionConfirmar;
             this.profesor = profesor;
         }
+
+        /// <summary>
+        /// Carga a un profesor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmAgregarModificarProfesores_Load(object sender, EventArgs e)
         {
             this.cmbSexoProf.DataSource = Enum.GetValues(typeof(ECampos.ESexo));
@@ -39,6 +45,12 @@ namespace Vista
                 this.cmbActividadProf.SelectedIndex = (int)profesor.Actividad;
             }
         }
+
+        /// <summary>
+        /// Agrega o modifica a un profesor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAceptarProf_Click(object sender, EventArgs e)
         {
             try
@@ -72,13 +84,21 @@ namespace Vista
                 MessageBox.Show("Verifique la correcta carga de los campos ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-           
+        
+        /// <summary>
+        /// Cancela la carga o modificacion del profesor
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCancelarProf_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
     
+        /// <summary>
+        /// Devuelve un objeto del tipo profesor
+        /// </summary>
         public Profesor DevolverProfesor
         {
             get
@@ -91,6 +111,12 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Verifica que un campo determinado no esté vacío
+        /// </summary>
+        /// <param name="campoAControlar">campo a evaluar</param>
+        /// <returns>si está vació, false. Sino, true</returns>
+        /// <exception cref="CargaFormException"></exception>
         public bool ElCampoNoEstaVacio(string campoAControlar)
         {
             if (campoAControlar != String.Empty)
@@ -103,6 +129,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que se haya elegido un valor para el campo fecha
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="CargaFormException"></exception>
         public bool ValidarEleccionSexo()
         {
             if (this.cmbSexoProf.SelectedIndex != -1)
@@ -114,6 +145,12 @@ namespace Vista
                 throw new CargaFormException("Por favor, seleccione una opción en el campo sexo");
             }
         }
+
+        /// <summary>
+        /// Valida que se haya elegido un valor para el campo actividad
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="CargaFormException"></exception>
         public bool ValidarEleccionFecha()
         {
             DateTime fechaDeHoy = DateTime.Now;
@@ -127,6 +164,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que se haya elegido un valor para el campo actividad
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="CargaFormException"></exception>
         public bool ValidarEleccionActividad()
         {
             if (this.cmbActividadProf.SelectedIndex != -1)
@@ -138,6 +180,11 @@ namespace Vista
                 throw new CargaFormException("Por favor, seleccione una opción en el campo actividad");
             }
         }
+
+        /// <summary>
+        /// Valida todos los campos del formulario
+        /// </summary>
+        /// <returns></returns>
         private bool ValidarTodosLosCampos()
         {
             if (ElCampoNoEstaVacio(this.txtDniProf.Text) &&
@@ -156,6 +203,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que no se ingresen otros caracteres que no sean muumeros
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtDniProf_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
@@ -165,6 +217,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que no se ingresen otros caracteres que no sean letras
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtNombreProf_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
@@ -174,6 +231,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que no se ingresen otros caracteres que no sean letras
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtApellidoProf_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
@@ -183,6 +245,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que no se ingresen otros caracteres que no sean numeros
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtSalarioProf_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))

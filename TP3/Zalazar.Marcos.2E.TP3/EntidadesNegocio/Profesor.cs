@@ -31,6 +31,9 @@ namespace EntidadesNegocio
             this.actividad = actividad;
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve el dni del profesor
+        /// </summary>
         public int Dni
         {
             get
@@ -43,6 +46,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve el nombre del profesor
+        /// </summary>
         public string Nombre
         {
             get
@@ -54,6 +60,9 @@ namespace EntidadesNegocio
                 this.nombre = value;
             }
         }
+        /// <summary>
+        /// Propiedad que asigna y devuelve el apellido del profesor
+        /// </summary>
         public string Apellido
         {
             get
@@ -66,6 +75,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve el sexo del profesor
+        /// </summary>
         public ECampos.ESexo Sexo
         {
             get
@@ -78,6 +90,9 @@ namespace EntidadesNegocio
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve la fecha de contratacion del profesor
+        /// </summary>
         public DateTime FechaDeContratacion
         {
             get
@@ -89,6 +104,10 @@ namespace EntidadesNegocio
                 this.fechaDeContratacion = value;
             }
         }
+
+        /// <summary>
+        /// Propiedad que asigna y devuelve el salario del profesor
+        /// </summary>
         public decimal Salario
         {
             get
@@ -100,6 +119,9 @@ namespace EntidadesNegocio
                 this.salario = value;
             }
         }
+        /// <summary>
+        /// Propiedad que asigna y devuelve la actividad enseñada por el profesor
+        /// </summary>
         public ECampos.Actividades Actividad
         {
             get
@@ -111,6 +133,11 @@ namespace EntidadesNegocio
                 this.actividad = value;
             }
         }
+
+        /// <summary>
+        /// Método que devuelve los datos del profesor
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();

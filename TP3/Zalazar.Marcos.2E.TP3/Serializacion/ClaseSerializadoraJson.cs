@@ -18,6 +18,12 @@ namespace Serializacion
             path += @"\Archivos-Serializacion\";
         }
 
+        /// <summary>
+        /// Serializa un archivo a formato JSON 
+        /// </summary>
+        /// <param name="datos">tipo genérico</param>
+        /// <param name="nombre">nombre del archivo</param>
+        /// <exception cref="Exception"></exception>
         public static void Escribir(T datos, string nombre)
         {
             string nombreArchivo = path + "SerializandoJson_" + nombre + ".js";
@@ -39,7 +45,12 @@ namespace Serializacion
             }
         }
 
-
+        /// <summary>
+        /// Deserializa un archivo en formato JSON
+        /// </summary>
+        /// <param name="nombre">nombre del archivo</param>
+        /// <returns>devuelve la informacion leida</returns>
+        /// <exception cref="Exception"></exception>
         public static T Leer(string nombre)
         {
             string archivo = string.Empty;

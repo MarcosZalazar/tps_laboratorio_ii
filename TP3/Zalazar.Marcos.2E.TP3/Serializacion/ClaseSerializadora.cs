@@ -13,6 +13,12 @@ namespace Serializacion
             path += @"\Mock\";
         }
 
+        /// <summary>
+        /// Serializa un archivo a formato XML 
+        /// </summary>
+        /// <param name="datos"> tipo genérico</param>
+        /// <param name="nombreFile"> nombre del archivo</param>
+        /// <exception cref="Exception"></exception>
         public static void Escribir(T datos, string nombreFile)
         {
             string nombreArchivo = nombreFile;
@@ -36,6 +42,12 @@ namespace Serializacion
             }
         }
 
+        /// <summary>
+        /// Deserializa un archivo en formato XML
+        /// </summary>
+        /// <param name="nombre"> nombre del archivo</param>
+        /// <returns> devuelve la informacion leida</returns>
+        /// <exception cref="Exception"></exception>
         public static T Leer(string nombre)
         {
             string archivo = string.Empty;
@@ -72,6 +84,13 @@ namespace Serializacion
             }
         }
 
+        /// <summary>
+        /// Escribe un archivo en formato txt
+        /// </summary>
+        /// <param name="nombreArchivo">nombre del archivo</param>
+        /// <param name="contenido">contenido del archivo</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public static bool EscribirEnTxt(string nombreArchivo,string contenido)
         {
             try 

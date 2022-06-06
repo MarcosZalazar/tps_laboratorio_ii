@@ -21,6 +21,11 @@ namespace Vista
             this.egreso = egreso;
         }
 
+        /// <summary>
+        /// Carga los egresos del gimnasio en forma manual
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCargaManual_Click(object sender, EventArgs e)
         {
             try
@@ -39,6 +44,9 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna y devuelve a un objeto egreso
+        /// </summary>
         public Egreso DevolverEgreso
         {
             get
@@ -50,6 +58,13 @@ namespace Vista
                 this.egreso = value;
             }
         }
+
+        /// <summary>
+        /// Verifica que un campo determinado no esté vacío
+        /// </summary>
+        /// <param name="campoAControlar"> campo a evuluar</param>
+        /// <returns> si está vació, false. Sino, true</returns>
+        /// <exception cref="CargaFormException"></exception>
         public bool ElCampoNoEstaVacio(string campoAControlar)
         {
             if (campoAControlar != String.Empty)
@@ -62,6 +77,10 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida todos los campos del formulario
+        /// </summary>
+        /// <returns></returns>
         private bool ValidarLosCampos()
         {
             if (ElCampoNoEstaVacio(this.txtTipoEgreso.Text) && ElCampoNoEstaVacio(this.txtImporteEgreso.Text))
@@ -74,6 +93,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que no se ingresen otros caracteres que no sean letras
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtTipoEgreso_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
@@ -83,6 +107,11 @@ namespace Vista
             }
         }
 
+        /// <summary>
+        /// Valida que no se ingresen otros caracteres que no sean números
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtImporteEgreso_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
