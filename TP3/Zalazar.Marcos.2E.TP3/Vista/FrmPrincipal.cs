@@ -21,6 +21,7 @@ namespace Vista
         public static string nombreArchivoProfesor;
         public static string fichaSocio;
         public static string nombreArchivoEgreso;
+        DirectoryInfo path;
         public Gimnasio gimnasio;
 
         static FrmPrincipal()
@@ -30,21 +31,25 @@ namespace Vista
             fichaSocio = "fichaSocio.txt";
             nombreArchivoEgreso = "listaEgresos.xml";
         }
+
         public FrmPrincipal()
         {
             InitializeComponent();
             this.gimnasio = new Gimnasio("Espartanos");
-
         }
+
         private void FrmPrincipalDeSocio_Load(object sender, EventArgs e)
         {
+            
             if (File.Exists(nombreArchivo))
             {
                 this.gimnasio.ListaSocios = ClaseSerializadora<List<Socio>>.Leer(nombreArchivo);
             }
             else
             {
-                this.gimnasio.ListaSocios = ClaseSerializadora<List<Socio>>.Leer("MockSocio.xml");
+                path = Directory.CreateDirectory($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\\Mock\\");
+                this.gimnasio.ListaSocios = ClaseSerializadora<List<Socio>>.Leer(@"C:\Users\Marcos\Desktop\Mock\MockSocio.xml");
+
             }
 
             if (File.Exists(nombreArchivoProfesor))
@@ -53,7 +58,7 @@ namespace Vista
             }
             else
             {
-                this.gimnasio.ListaProfesores = ClaseSerializadora<List<Profesor>>.Leer("MockProfesores.xml");
+                this.gimnasio.ListaProfesores = ClaseSerializadora<List<Profesor>>.Leer(@"C:\Users\Marcos\Desktop\Mock\MockProfesores.xml");
             }
 
             RefrescarLista();
@@ -74,7 +79,7 @@ namespace Vista
             if (frmAgregarModificarSocio.DevolverSocio is not null && resultado == DialogResult.OK)
             {
                 this.gimnasio.ListaSocios.Add(frmAgregarModificarSocio.DevolverSocio);
-                ClaseSerializadora<List<Socio>>.Escribir(this.gimnasio.ListaSocios, nombreArchivo);
+                ClaseSerializadora<List<Socio>>.Escribir(this.gimnasio.ListaSocios, @"C:\Users\Marcos\Desktop\Mock\MockSocio.xml");
                 this.RefrescarLista();
                 MessageBox.Show("Socio agregado", "Socios", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }

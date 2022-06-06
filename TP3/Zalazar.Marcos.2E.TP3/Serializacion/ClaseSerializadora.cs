@@ -10,17 +10,17 @@ namespace Serializacion
         static ClaseSerializadora()
         {
             path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            path += @"\Archivos-Serializacion\";
+            path += @"\Mock\";
         }
 
         public static void Escribir(T datos, string nombreFile)
         {
-            string nombreArchivo = path + "Serializacion_" + nombreFile;
+            string nombreArchivo = nombreFile;
             try
             {
                 if (!Directory.Exists(path))
                 {
-                    Directory.CreateDirectory(path);
+                    Directory.CreateDirectory(nombreFile);
                 }
 
                 using (StreamWriter streamWriter = new StreamWriter(nombreArchivo))
