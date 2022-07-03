@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSocio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Socio>
+    <DniSocio>31661766</DniSocio>
+    <Nombre>Pablo</Nombre>
+    <Apellido>Picasso</Apellido>
+    <Sexo>Masculino</Sexo>
+    <FechaDeAlta>2003-06-05T22:24:04.5159858-03:00</FechaDeAlta>
+    <Membresia>Black</Membresia>
+    <ListaActividades>
+      <Actividades>GimnasioLibre</Actividades>
+      <Actividades>Aerobics</Actividades>
+    </ListaActividades>
+  </Socio>
+</ArrayOfSocio>

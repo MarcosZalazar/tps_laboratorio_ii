@@ -1,0 +1,150 @@
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarProfesores.resources
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarSocio.resources
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\refint\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.pdb
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarProfesores.resources
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarSocio.resources
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipalDeProfesores.resources
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipalDeSocio.resources
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\refint\Vista.dll
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Marcos\Desktop\Back up TP3(antes del cambio)\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.pdb
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarProfesores.resources
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarSocio.resources
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\refint\Vista.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.dll
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.pdb
+C:\Users\Marcos\Desktop\ULTIMO INTENTO\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarEgresos.resources
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.dll
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarEgresos.resources
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\MockProfesores.xml
+C:\Users\Marcos\Desktop\UTN tps\TP3\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\MockSocio.xml
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\MockProfesores.xml
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\MockSocio.xml
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\GimnasioException.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\bin\Debug\net5.0-windows\Serializacion.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarEgresos.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarProfesores.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarSocio.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\refint\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP3\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.exe
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\MockSocio.xml
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.deps.json
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\GimnasioException.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Serializacion.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\EntidadesNegocio.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\GimnasioException.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Serializacion.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.AssemblyReference.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarEgresos.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarProfesores.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmAgregarModificarSocio.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.FrmPrincipal.resources
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.GenerateResource.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfoInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.AssemblyInfo.cs
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.csproj.CopyComplete
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\refint\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.pdb
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
