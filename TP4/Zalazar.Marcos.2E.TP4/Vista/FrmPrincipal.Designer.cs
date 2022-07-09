@@ -47,6 +47,7 @@
             this.btnLimpiarInforme = new System.Windows.Forms.Button();
             this.btnImportarEgresos = new System.Windows.Forms.Button();
             this.lblRecordatorioProfesores = new System.Windows.Forms.Label();
+            this.btnImprimirInforme = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstSocios
@@ -204,9 +205,9 @@
             // 
             // btnLimpiarInforme
             // 
-            this.btnLimpiarInforme.Location = new System.Drawing.Point(707, 606);
+            this.btnLimpiarInforme.Location = new System.Drawing.Point(707, 598);
             this.btnLimpiarInforme.Name = "btnLimpiarInforme";
-            this.btnLimpiarInforme.Size = new System.Drawing.Size(145, 38);
+            this.btnLimpiarInforme.Size = new System.Drawing.Size(145, 42);
             this.btnLimpiarInforme.TabIndex = 18;
             this.btnLimpiarInforme.Text = "Limpiar informe";
             this.btnLimpiarInforme.UseVisualStyleBackColor = true;
@@ -214,7 +215,7 @@
             // 
             // btnImportarEgresos
             // 
-            this.btnImportarEgresos.Location = new System.Drawing.Point(897, 606);
+            this.btnImportarEgresos.Location = new System.Drawing.Point(897, 598);
             this.btnImportarEgresos.Name = "btnImportarEgresos";
             this.btnImportarEgresos.Size = new System.Drawing.Size(145, 42);
             this.btnImportarEgresos.TabIndex = 19;
@@ -233,11 +234,22 @@
             this.lblRecordatorioProfesores.Text = "Recordatorio";
             this.lblRecordatorioProfesores.Visible = false;
             // 
+            // btnImprimirInforme
+            // 
+            this.btnImprimirInforme.Location = new System.Drawing.Point(707, 646);
+            this.btnImprimirInforme.Name = "btnImprimirInforme";
+            this.btnImprimirInforme.Size = new System.Drawing.Size(145, 44);
+            this.btnImprimirInforme.TabIndex = 22;
+            this.btnImprimirInforme.Text = "Imprimir Informe";
+            this.btnImprimirInforme.UseVisualStyleBackColor = true;
+            this.btnImprimirInforme.Click += new System.EventHandler(this.btnImprimirInforme_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1065, 702);
+            this.Controls.Add(this.btnImprimirInforme);
             this.Controls.Add(this.lblRecordatorioProfesores);
             this.Controls.Add(this.btnImportarEgresos);
             this.Controls.Add(this.btnLimpiarInforme);
@@ -288,5 +300,6 @@
         private System.Windows.Forms.Button btnLimpiarInforme;
         private System.Windows.Forms.Button btnImportarEgresos;
         private System.Windows.Forms.Label lblRecordatorioProfesores;
+        private System.Windows.Forms.Button btnImprimirInforme;
     }
 }

@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EntidadesNegocio;
 using System;
+using GimnasioException;
 
 namespace TestUnitarios
 {
@@ -42,7 +43,7 @@ namespace TestUnitarios
         }
 
         [TestMethod]
-        public void Gimnasio_CuandoSeEliminaUnSocio_NoDberiaFigurarEnLaListaDeSocios()
+        public void Gimnasio_CuandoSeEliminaUnSocio_NoDeberiaFigurarEnLaListaDeSocios()
         {
             //ARRANGE
             Gimnasio gimnasioPrueba2 = new Gimnasio();
@@ -64,5 +65,76 @@ namespace TestUnitarios
             //ASSERT
             Assert.AreNotEqual(fueBorradoExpected, fueBorradoActual);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(PersonaException))]
+        public void Gimnasio_CuandoSeAgregaUnSocio_NoDeberiaEstarEnLaListaDeSociosActivos()
+        {
+            //ARRANGE
+            Gimnasio gimnasioPrueba3 = new Gimnasio();
+            Socio socioPrueba3 = new Socio(12345678, "Juan", "Almeyda", ECampos.ESexo.Masculino, new DateTime(2003, 01, 01), ECampos.EMembresia.Black);
+            gimnasioPrueba3.ListaSocios.Add(socioPrueba3);
+
+            //ACT
+            Socio socioPrueba4 = new Socio(12345678, "Pedro", "Palacios", ECampos.ESexo.Masculino, new DateTime(2007, 01, 01), ECampos.EMembresia.Smart);
+            if (gimnasioPrueba3.estaElSocioEnLaLista(socioPrueba4) == false)
+            {
+                gimnasioPrueba3.ListaSocios.Add(socioPrueba4);
+            }
+            else
+            {
+                throw new PersonaException("Intento de carga duplicada de profesor");
+            }
+
+            //ASSERT
+
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(PersonaException))]
+        public void Gimnasio_CuandoSeAgregaUnProfesor_NoDeberiaEstarEnLaListaDeProfesoresActivos()
+        {
+            //ARRANGE
+            Gimnasio gimnasioPrueba4 = new Gimnasio();
+            Profesor profesorPrueba1 = new Profesor(12345679, "Miguel", "Juarez", ECampos.ESexo.Masculino, new DateTime(2009, 01, 01),5500, ECampos.Actividades.Aerobics);
+            gimnasioPrueba4.listaProfesores.Add(profesorPrueba1);
+
+            //ACT
+            Profesor profesorPrueba2 = new Profesor(12345679, "Lucas", "Palacios", ECampos.ESexo.Masculino, new DateTime(2008, 01, 01),10000, ECampos.Actividades.Spinning);
+            if (gimnasioPrueba4.estaElProfesorEnLaLista(profesorPrueba2) == false)
+            {
+                gimnasioPrueba4.listaProfesores.Add(profesorPrueba2);
+            }
+            else
+            {
+                throw new PersonaException("Intento de carga duplicada de profesor");
+            }
+
+            //ASSERT
+
+        }
+
+        [TestMethod]
+        public void Gimnasio_CuandoSeAgregaUnSocio_DeberiaTenerUnDniValido()
+        {
+            //ARRANGE
+            string dniDePrueba="154523";
+            bool expected=false;
+            bool actual;
+
+            //ACT
+            if (dniDePrueba.ValidarDni())
+            {
+                actual = true;
+            }
+            else
+            {
+                actual = false;
+            }
+
+            //ASSERT
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }

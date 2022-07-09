@@ -188,6 +188,7 @@ namespace Vista
         private bool ValidarTodosLosCampos()
         {
             if (ElCampoNoEstaVacio(this.txtDniProf.Text) &&
+                this.txtDniProf.Text.ValidarDni() &&
                 ElCampoNoEstaVacio(this.txtNombreProf.Text) &&
                 ElCampoNoEstaVacio(this.txtApellidoProf.Text) &&
                 ValidarEleccionSexo() &&

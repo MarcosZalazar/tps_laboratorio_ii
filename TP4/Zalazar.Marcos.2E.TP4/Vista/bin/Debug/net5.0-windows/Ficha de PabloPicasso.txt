@@ -1,0 +1,15 @@
+FICHA DEL SOCIO
+------------------- 
+  
+Dni del socio: 31661766  
+Nombre:Pablo  
+Apellido:Picasso  
+Sexo:Masculino  
+Fecha de alta:05/06/2003 22:24:04  
+Membresia:Black  
+Actividades: 
+ GimnasioLibre 
+ Aerobics 
+
+------------------- 
+

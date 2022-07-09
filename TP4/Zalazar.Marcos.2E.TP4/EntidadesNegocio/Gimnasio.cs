@@ -245,7 +245,7 @@ namespace EntidadesNegocio
 
             for (int i=0; i < periodoComercial.Egresos.Count; i++)
             {
-                totalEgresos = totalEgresos+periodoComercial.Egresos[0].Importe;
+                totalEgresos = totalEgresos+periodoComercial.Egresos[i].Importe;
             }
             
             return totalEgresos;

@@ -190,6 +190,7 @@ namespace Vista
             {
                 MessageBox.Show("Error.No se pudo eliminar al socio. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            this.gimnasio.EvaluarNecesidadDeProfesores();
         }
 
         /// <summary>
@@ -204,7 +205,7 @@ namespace Vista
             if (socioSeleccionado is not null)
             {
                 string contenido = this.gimnasio.ImprimirFichaDelSocio(socioSeleccionado);
-                string nombreFicha = "Ficha de "+socioSeleccionado.Nombre + socioSeleccionado.Apellido+".txt";
+                string nombreFicha = "Ficha de "+socioSeleccionado.Nombre +" "+ socioSeleccionado.Apellido+".txt";
                 ClaseSerializadora<string>.EscribirEnTxt(nombreFicha, contenido);
                 MessageBox.Show("Ficha impresa", "Socios", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -212,7 +213,6 @@ namespace Vista
             {
                 MessageBox.Show("Debe seleccionar un elemento de la lista", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            this.gimnasio.EvaluarNecesidadDeProfesores();
         }
 
         /// <summary>
@@ -404,6 +404,21 @@ namespace Vista
         {
             this.gimnasio.PeriodoComercial.Egresos=ClaseSerializadoraJson<List<Egreso>>.Leer(nombreArchivoEgreso);
             MessageBox.Show("Egreso importado con éxito", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private void btnImprimirInforme_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string contenido = this.gimnasio.InformacionGestion();
+                string nombreInforme = $"Informe de gestión de fecha {DateTime.Now.ToString("dd-mm-yyyy hh-mm-ss")}.txt";
+                ClaseSerializadora<string>.EscribirEnTxt(nombreInforme, contenido);
+                MessageBox.Show("Informe de gestión impreso", "Informe de gestión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch (Exception) 
+            {
+                MessageBox.Show("Error.No se pudo realizar la impresión del informe. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

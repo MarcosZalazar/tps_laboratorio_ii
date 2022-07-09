@@ -1793,6 +1793,16 @@
         "runtime": {
           "bin/placeholder/EntidadesNegocio.dll": {}
         }
+      },
+      "GimnasioException/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/GimnasioException.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GimnasioException.dll": {}
+        }
       }
     }
   },
@@ -6539,11 +6549,17 @@
       "type": "project",
       "path": "../EntidadesNegocio/EntidadesNegocio.csproj",
       "msbuildProject": "../EntidadesNegocio/EntidadesNegocio.csproj"
+    },
+    "GimnasioException/1.0.0": {
+      "type": "project",
+      "path": "../GimnasioException/GimnasioException.csproj",
+      "msbuildProject": "../GimnasioException/GimnasioException.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "EntidadesNegocio >= 1.0.0",
+      "GimnasioException >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
@@ -6579,6 +6595,9 @@
           "projectReferences": {
             "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\EntidadesNegocio\\EntidadesNegocio.csproj": {
               "projectPath": "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\EntidadesNegocio\\EntidadesNegocio.csproj"
+            },
+            "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\GimnasioException\\GimnasioException.csproj": {
+              "projectPath": "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\GimnasioException\\GimnasioException.csproj"
             }
           }
         }
