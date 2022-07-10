@@ -8,6 +8,9 @@ namespace TestUnitarios
     [TestClass]
     public class TestSocios
     {
+        /// <summary>
+        /// Esta prueba testea que al momento de instanciar un gimnasio se cree una lista de socios
+        /// </summary>
         [TestMethod]
         public void Gimnasio_CuandoSeCreaUnGimnasio_DeberiaTenerUnaListaDeSocios()
         {
@@ -19,6 +22,10 @@ namespace TestUnitarios
             //ASSERT
             Assert.IsNotNull(gimnasioPrueba.ListaSocios);
         }
+
+        /// <summary>
+        /// Esta prueba testea que al instanciar un socio este figure en la lista de socios
+        /// </summary>
         [TestMethod]
         public void Gimnasio_CuandoSeCargaUnSocio_DeberiaFigurarEnLaListaDeSocios()
         {
@@ -42,6 +49,9 @@ namespace TestUnitarios
             Assert.AreEqual(expected,actual);
         }
 
+        /// <summary>
+        /// Esta prueba testea que al eliminar un socio este no figure en la lista de socios
+        /// </summary>
         [TestMethod]
         public void Gimnasio_CuandoSeEliminaUnSocio_NoDeberiaFigurarEnLaListaDeSocios()
         {
@@ -66,9 +76,13 @@ namespace TestUnitarios
             Assert.AreNotEqual(fueBorradoExpected, fueBorradoActual);
         }
 
+        /// <summary>
+        /// Esta prueba testea que al intentar agregar a un socio con el mismo DNi se lance una excepción
+        /// </summary>
+        /// <exception cref="PersonaException"></exception>
         [TestMethod]
         [ExpectedException(typeof(PersonaException))]
-        public void Gimnasio_CuandoSeAgregaUnSocio_NoDeberiaEstarEnLaListaDeSociosActivos()
+        public void Gimnasio_CuandoSeAgregaUnSocioConElMismoDni_NoDeberiaEstarEnLaListaDeSociosActivos()
         {
             //ARRANGE
             Gimnasio gimnasioPrueba3 = new Gimnasio();
@@ -90,6 +104,10 @@ namespace TestUnitarios
 
         }
 
+        /// <summary>
+        /// Esta prueba testea que al intentar agregar a un socio con el mismo DNi se lance una excepción
+        /// </summary>
+        /// <exception cref="PersonaException"></exception>
         [TestMethod]
         [ExpectedException(typeof(PersonaException))]
         public void Gimnasio_CuandoSeAgregaUnProfesor_NoDeberiaEstarEnLaListaDeProfesoresActivos()
@@ -114,6 +132,9 @@ namespace TestUnitarios
 
         }
 
+        /// <summary>
+        /// Esta prueba valida que al agregar un socio el método validarDni solo permite cargar dni válidos
+        /// </summary>
         [TestMethod]
         public void Gimnasio_CuandoSeAgregaUnSocio_DeberiaTenerUnDniValido()
         {

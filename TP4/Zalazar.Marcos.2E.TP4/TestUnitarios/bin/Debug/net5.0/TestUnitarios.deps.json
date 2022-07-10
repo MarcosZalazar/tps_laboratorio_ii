@@ -1154,6 +1154,7 @@
       },
       "EntidadesNegocio/1.0.0": {
         "dependencies": {
+          "GimnasioException": "1.0.0",
           "System.Data.SqlClient": "4.8.3"
         },
         "runtime": {

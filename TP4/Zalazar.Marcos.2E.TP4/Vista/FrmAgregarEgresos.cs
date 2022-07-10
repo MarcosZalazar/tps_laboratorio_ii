@@ -38,6 +38,10 @@ namespace Vista
                     this.DialogResult = DialogResult.OK;
                 }
             }
+            catch (CargaFormException ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception)
             {
                 MessageBox.Show("Verifique la correcta carga de los campos ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -73,7 +77,7 @@ namespace Vista
             }
             else
             {
-                throw new CargaFormException("El campo no puede quedar vacio. Por favor, completarlo");
+                throw new CargaFormException("Existen campos vacios. Por favor, completarlos");
             }
         }
 

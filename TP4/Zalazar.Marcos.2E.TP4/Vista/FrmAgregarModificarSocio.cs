@@ -125,6 +125,10 @@ namespace Vista
                     this.DialogResult = DialogResult.OK;
                 }
             }
+            catch (CargaFormException ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception)
             {
                 MessageBox.Show("Verifique la correcta carga de los campos ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -171,7 +175,7 @@ namespace Vista
             }
             else
             {
-                throw new CargaFormException("El campo no puede quedar vacio. Por favor, completarlo");
+                throw new CargaFormException("Existen campos vacios. Por favor, completarlos");
             }
         }
 
@@ -200,7 +204,7 @@ namespace Vista
         public bool ValidarEleccionFecha()
         {
             DateTime fechaDeHoy = DateTime.Now;
-            if (this.dtmFechaAlta.Value.Date >= fechaDeHoy)
+            if (this.dtmFechaAlta.Value.Date > fechaDeHoy)
             {
                 throw new CargaFormException("Por favor, seleccione una fecha válida");
             }
@@ -234,8 +238,8 @@ namespace Vista
         /// <exception cref="CargaFormException"></exception>
         public bool ValidarEleccionActividad()
         {
-            if (!(this.chkGimnasioLibre.Checked && this.chkAerobics.Checked && this.chkSpinning.Checked &&
-                  this.chkPilates.Checked && this.chkYoga.Checked && this.chkNatacion.Checked))
+            if ((this.chkGimnasioLibre.Checked || this.chkAerobics.Checked || this.chkSpinning.Checked ||
+                  this.chkPilates.Checked || this.chkYoga.Checked || this.chkNatacion.Checked))
             {
                 return true;
             }

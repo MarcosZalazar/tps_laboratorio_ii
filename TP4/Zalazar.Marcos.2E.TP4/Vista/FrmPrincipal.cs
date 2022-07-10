@@ -29,7 +29,7 @@ namespace Vista
         {
             nombreArchivoSocio = "ListaSocios.xml";
             fichaSocio = "fichaSocio.txt";
-            nombreArchivoEgreso = "listaEgresos.xml";
+            nombreArchivoEgreso = "listaEgresos";
         }
 
         public FrmPrincipal()
@@ -194,7 +194,7 @@ namespace Vista
         }
 
         /// <summary>
-        /// Imprime una ficha
+        /// Imprime la ficha del socio seleccionado
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -213,21 +213,6 @@ namespace Vista
             {
                 MessageBox.Show("Debe seleccionar un elemento de la lista", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        /// <summary>
-        /// Muestra mensajes de error
-        /// </summary>
-        /// <param name="ex"></param>
-        private void MostrarMensajeDeError(Exception ex)
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-
-            stringBuilder.AppendLine(ex.Message);
-            stringBuilder.AppendLine();
-            stringBuilder.AppendLine(ex.StackTrace);
-
-            MessageBox.Show(stringBuilder.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         /// <summary>
@@ -389,7 +374,7 @@ namespace Vista
 
             if (frmAgregarEgreso.DevolverEgreso is not null && resultado == DialogResult.OK)
             {
-                this.gimnasio.PeriodoComercial.Egresos.Add(frmAgregarEgreso.DevolverEgreso);
+                this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, frmAgregarEgreso.DevolverEgreso);
                 ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
                 MessageBox.Show("Egreso agregado", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -406,14 +391,24 @@ namespace Vista
             MessageBox.Show("Egreso importado con éxito", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
+        /// <summary>
+        /// Imprime el informe de gestión en un archivo txt
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnImprimirInforme_Click(object sender, EventArgs e)
         {
             try
             {
-                string contenido = this.gimnasio.InformacionGestion();
-                string nombreInforme = $"Informe de gestión de fecha {DateTime.Now.ToString("dd-mm-yyyy hh-mm-ss")}.txt";
-                ClaseSerializadora<string>.EscribirEnTxt(nombreInforme, contenido);
-                MessageBox.Show("Informe de gestión impreso", "Informe de gestión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Task tareaDeImpresion = Task.Run(() =>
+                {
+                    string contenido = this.gimnasio.InformacionGestion();
+                    string nombreInforme = $"Informe de gestión de fecha {DateTime.Now.ToString("dd-mm-yyyy hh-mm-ss")}.txt";
+                    MessageBox.Show("Esta tarea podia demorar algunos segundos.Aguarde mientras se imprime el informe", "Informe de gestión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    Thread.Sleep(4000);
+                    ClaseSerializadora<string>.EscribirEnTxt(nombreInforme, contenido);
+                    MessageBox.Show("Informe de gestión impreso", "Informe de gestión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                });
             }
             catch (Exception) 
             {

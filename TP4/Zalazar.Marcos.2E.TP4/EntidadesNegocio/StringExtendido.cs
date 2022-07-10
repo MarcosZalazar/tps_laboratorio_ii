@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GimnasioException;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,15 +16,16 @@ namespace EntidadesNegocio
         /// <returns></returns>
         public static bool ValidarDni(this string dniAValidar)
         {
-            bool retorno = false;
-
             int auxDniInt = int.Parse(dniAValidar);
 
-            if ((auxDniInt > 0 && auxDniInt < 99999999) && (dniAValidar.Length==7 || dniAValidar.Length== 8))
-            { 
-                retorno = true;
+            if ((auxDniInt > 0 && auxDniInt <= 99999999) && (dniAValidar.Length == 7 || dniAValidar.Length == 8))
+            {
+                return true;
             }
-            return retorno;
+            else 
+            {
+                throw new CargaFormException("Dni inválido, verifique la carga");
+            }
         }
     }
 }

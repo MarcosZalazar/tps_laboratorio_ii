@@ -27,7 +27,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\GimnasioException\\GimnasioException.csproj": {
+                "projectPath": "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\GimnasioException\\GimnasioException.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

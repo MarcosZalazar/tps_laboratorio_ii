@@ -130,6 +130,16 @@
             "rid": "win"
           }
         }
+      },
+      "GimnasioException/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/GimnasioException.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GimnasioException.dll": {}
+        }
       }
     }
   },
@@ -446,10 +456,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "GimnasioException/1.0.0": {
+      "type": "project",
+      "path": "../GimnasioException/GimnasioException.csproj",
+      "msbuildProject": "../GimnasioException/GimnasioException.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "GimnasioException >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3"
     ]
   },
@@ -479,7 +495,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\GimnasioException\\GimnasioException.csproj": {
+              "projectPath": "C:\\Users\\Marcos\\Desktop\\UTN tps\\TP4\\Zalazar.Marcos.2E.TP4\\GimnasioException\\GimnasioException.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

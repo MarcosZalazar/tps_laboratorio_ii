@@ -1,1 +1,0 @@
-[{"Concepto":"Luz","Importe":3000},{"Concepto":"Gas","Importe":15000},{"Concepto":"Seguridad","Importe":40000},{"Concepto":"ABL","Importe":4000},{"Concepto":"Movistar","Importe":320}]
