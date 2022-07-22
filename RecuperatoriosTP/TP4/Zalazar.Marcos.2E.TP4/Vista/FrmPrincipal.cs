@@ -384,22 +384,30 @@ namespace Vista
         }
 
         /// <summary>
-        /// Muestra por pantalla la informacion de gestion del gimnasio
+        /// Genera un informe de gestion del gimnasio
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnMostrarInfoGestion_Click(object sender, EventArgs e)
+        private void btnGenerarInformeGestion_Click(object sender, EventArgs e)
         {
-            CargarIngresosPorCuotas();
-            CargarEgresosPorSalarios();
-            ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
-            this.rtbGestion.Text=this.gimnasio.InformacionGestion();
+            try
+            {
+                CargarIngresosPorCuotas();
+                CargarEgresosPorSalarios();
+                ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
+                this.rtbGestion.Text = this.gimnasio.InformacionGestion();
+                MessageBox.Show("Se ha generado el informe en formato json. Para conservarlo, haga una copia del archivo", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-            this.btnImportarEgresos.Enabled=false;
-            this.btnRegistrarEgresos.Enabled = false;
-            this.btnMostrarInfoGestion.Enabled = false;
-            this.btnLimpiarInforme.Enabled = true;
-            this.btnImprimirInforme.Enabled = true;
+                this.btnImportarEgresos.Enabled = false;
+                this.btnRegistrarEgresos.Enabled = false;
+                this.btnGenerarInformeGestion.Enabled = false;
+                this.btnLimpiarInforme.Enabled = true;
+                this.btnImprimirInforme.Enabled = true;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error.No se pudo generar el informe. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         /// <summary>
@@ -409,15 +417,25 @@ namespace Vista
         /// <param name="e"></param>
         private void btnLimpiarInforme_Click(object sender, EventArgs e)
         {
-            this.rtbGestion.Text = "";
-            this.gimnasio.PeriodoComercial.Egresos.Clear();
-            this.gimnasio.PeriodoComercial.Ingresos.Clear();
+            try 
+            {
+                this.rtbGestion.Text = "";
+                this.gimnasio.PeriodoComercial.Egresos.Clear();
+                this.gimnasio.PeriodoComercial.Ingresos.Clear();
+                ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
 
-            this.btnImportarEgresos.Enabled = true;
-            this.btnRegistrarEgresos.Enabled = true;
-            this.btnMostrarInfoGestion.Enabled = true;
-            this.btnLimpiarInforme.Enabled = false;
-            this.btnImprimirInforme.Enabled = false;
+                MessageBox.Show("Se ha borrado el informe", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                this.btnImportarEgresos.Enabled = true;
+                this.btnRegistrarEgresos.Enabled = true;
+                this.btnGenerarInformeGestion.Enabled = true;
+                this.btnLimpiarInforme.Enabled = false;
+                this.btnImprimirInforme.Enabled = false;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error.No se pudo borrar el informe. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         /// <summary>
@@ -430,10 +448,17 @@ namespace Vista
             FrmAgregarEgresos frmAgregarEgreso = new FrmAgregarEgresos(null);
             DialogResult resultado = frmAgregarEgreso.ShowDialog();
 
-            if (frmAgregarEgreso.DevolverEgreso is not null && resultado == DialogResult.OK)
+            try
             {
-                this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, frmAgregarEgreso.DevolverEgreso);
-                MessageBox.Show("Egreso agregado", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                if (frmAgregarEgreso.DevolverEgreso is not null && resultado == DialogResult.OK)
+                {
+                    this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, frmAgregarEgreso.DevolverEgreso);
+                    MessageBox.Show("Egreso agregado", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception) 
+            {
+                MessageBox.Show("Error.No se pudo registrar los egresos. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
             this.btnImportarEgresos.Enabled = false;
@@ -446,10 +471,19 @@ namespace Vista
         /// <param name="e"></param>
         private void btnImportarEgresos_Click(object sender, EventArgs e)
         {
-            //this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, ClaseSerializadoraJson<List<Egreso>>.Leer("ImportadorEgresos.json"));
-            
-            this.gimnasio.PeriodoComercial.Egresos=ClaseSerializadoraJson<List<Egreso>>.Leer("ImportadorEgresos.json");
-            MessageBox.Show("Egreso importado con éxito", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            try
+            {
+                this.gimnasio.PeriodoComercial.Egresos = ClaseSerializadoraJson<List<Egreso>>.Leer("ImportadorEgresos.json");
+                MessageBox.Show("Egreso importado con éxito", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error.No se pudo importar los egresos. Revise el archivo", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            finally 
+            {
+                this.btnImportarEgresos.Enabled = false;
+            }
         }
 
         /// <summary>

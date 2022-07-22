@@ -41,7 +41,7 @@
             this.lblTituloSocios = new System.Windows.Forms.Label();
             this.lblTituloProfesores = new System.Windows.Forms.Label();
             this.lblTituloGestion = new System.Windows.Forms.Label();
-            this.btnMostrarInfoGestion = new System.Windows.Forms.Button();
+            this.btnGenerarInformeGestion = new System.Windows.Forms.Button();
             this.rtbGestion = new System.Windows.Forms.RichTextBox();
             this.btnRegistrarEgresos = new System.Windows.Forms.Button();
             this.btnLimpiarInforme = new System.Windows.Forms.Button();
@@ -175,15 +175,15 @@
             this.lblTituloGestion.TabIndex = 13;
             this.lblTituloGestion.Text = "Informacion de gestion";
             // 
-            // btnMostrarInfoGestion
+            // btnGenerarInformeGestion
             // 
-            this.btnMostrarInfoGestion.Location = new System.Drawing.Point(707, 549);
-            this.btnMostrarInfoGestion.Name = "btnMostrarInfoGestion";
-            this.btnMostrarInfoGestion.Size = new System.Drawing.Size(145, 42);
-            this.btnMostrarInfoGestion.TabIndex = 15;
-            this.btnMostrarInfoGestion.Text = "Mostrar Informacion de \r\nGestion";
-            this.btnMostrarInfoGestion.UseVisualStyleBackColor = true;
-            this.btnMostrarInfoGestion.Click += new System.EventHandler(this.btnMostrarInfoGestion_Click);
+            this.btnGenerarInformeGestion.Location = new System.Drawing.Point(707, 549);
+            this.btnGenerarInformeGestion.Name = "btnGenerarInformeGestion";
+            this.btnGenerarInformeGestion.Size = new System.Drawing.Size(145, 42);
+            this.btnGenerarInformeGestion.TabIndex = 15;
+            this.btnGenerarInformeGestion.Text = "Generar Informe de Gestion";
+            this.btnGenerarInformeGestion.UseVisualStyleBackColor = true;
+            this.btnGenerarInformeGestion.Click += new System.EventHandler(this.btnGenerarInformeGestion_Click);
             // 
             // rtbGestion
             // 
@@ -255,7 +255,7 @@
             this.Controls.Add(this.btnLimpiarInforme);
             this.Controls.Add(this.btnRegistrarEgresos);
             this.Controls.Add(this.rtbGestion);
-            this.Controls.Add(this.btnMostrarInfoGestion);
+            this.Controls.Add(this.btnGenerarInformeGestion);
             this.Controls.Add(this.lblTituloGestion);
             this.Controls.Add(this.lblTituloProfesores);
             this.Controls.Add(this.lblTituloSocios);
@@ -294,7 +294,7 @@
         private System.Windows.Forms.Label lblTituloSocios;
         private System.Windows.Forms.Label lblTituloProfesores;
         private System.Windows.Forms.Label lblTituloGestion;
-        private System.Windows.Forms.Button btnMostrarInfoGestion;
+        private System.Windows.Forms.Button btnGenerarInformeGestion;
         private System.Windows.Forms.RichTextBox rtbGestion;
         private System.Windows.Forms.Button btnRegistrarEgresos;
         private System.Windows.Forms.Button btnLimpiarInforme;
