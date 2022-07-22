@@ -29,7 +29,7 @@ namespace Vista
         {
             nombreArchivoSocio = "ListaSocios.xml";
             fichaSocio = "fichaSocio.txt";
-            nombreArchivoEgreso = "listaEgresos";
+            nombreArchivoEgreso = "listaEgresos.json";
         }
 
         public FrmPrincipal()
@@ -343,12 +343,54 @@ namespace Vista
         }
 
         /// <summary>
+        /// Carga los ingresos obtenidos por las cuotas
+        /// </summary>
+        public void CargarIngresosPorCuotas()
+        {
+            foreach (Socio socio in this.gimnasio.listaSocios)
+            {
+                if (socio.SocioActivo == true)
+                {
+                    if (socio.Membresia == ECampos.EMembresia.Smart)
+                    {
+                        Ingreso ingreso = new Ingreso($"Cuota de {socio.Nombre}", 1000);
+                        this.gimnasio.PeriodoComercial.AgregarIngreso(this.gimnasio.PeriodoComercial, ingreso);
+                    }
+                    else
+                    {
+                        Ingreso ingreso = new Ingreso($"Cuota de {socio.Nombre}", 2000);
+                        this.gimnasio.PeriodoComercial.AgregarIngreso(this.gimnasio.PeriodoComercial, ingreso);
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Carga los egresos por salarios de los profesores
+        /// </summary>
+        public void CargarEgresosPorSalarios()
+        {
+            foreach (Profesor profesor in this.gimnasio.listaProfesores)
+            {
+                if (profesor.ProfesorActivo == true)
+                {
+                    Egreso egreso = new Egreso($"Salario del profesor {profesor.Nombre}", (int)profesor.Salario);
+                    this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, egreso);
+                    ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
+                }
+            }
+        }
+
+        /// <summary>
         /// Muestra por pantalla la informacion de gestion del gimnasio
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnMostrarInfoGestion_Click(object sender, EventArgs e)
         {
+            CargarIngresosPorCuotas();
+            CargarEgresosPorSalarios();
+            ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
             this.rtbGestion.Text=this.gimnasio.InformacionGestion();
         }
 
@@ -375,7 +417,6 @@ namespace Vista
             if (frmAgregarEgreso.DevolverEgreso is not null && resultado == DialogResult.OK)
             {
                 this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, frmAgregarEgreso.DevolverEgreso);
-                ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
                 MessageBox.Show("Egreso agregado", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
@@ -387,7 +428,7 @@ namespace Vista
         /// <param name="e"></param>
         private void btnImportarEgresos_Click(object sender, EventArgs e)
         {
-            this.gimnasio.PeriodoComercial.Egresos=ClaseSerializadoraJson<List<Egreso>>.Leer(nombreArchivoEgreso);
+            this.gimnasio.PeriodoComercial.Egresos=ClaseSerializadoraJson<List<Egreso>>.Leer("ImportadorEgresos.json");
             MessageBox.Show("Egreso importado con éxito", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 

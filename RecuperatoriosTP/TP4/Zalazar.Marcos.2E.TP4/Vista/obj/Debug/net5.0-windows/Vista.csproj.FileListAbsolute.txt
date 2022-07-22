@@ -151,7 +151,6 @@ C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0
 C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\SerializandoJson_listaEgresos.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.exe
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\MockSocio.xml
-C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\SerializandoJson_listaEgresos.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.deps.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\Vista.runtimeconfig.dev.json
@@ -185,3 +184,4 @@ C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.pdb
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\Vista.genruntimeconfig.cache
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\obj\Debug\net5.0-windows\ref\Vista.dll
+C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Vista\bin\Debug\net5.0-windows\ImportadorEgresos.json

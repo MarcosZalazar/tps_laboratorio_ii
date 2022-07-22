@@ -326,7 +326,6 @@ C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestU
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\MockSocio.xml
-C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\SerializandoJson_listaEgresos.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\TestUnitarios.deps.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\TestUnitarios.runtimeconfig.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\TestUnitarios.runtimeconfig.dev.json
@@ -429,3 +428,4 @@ C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestU
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\obj\Debug\net5.0\TestUnitarios.pdb
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\obj\Debug\net5.0\TestUnitarios.genruntimeconfig.cache
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\obj\Debug\net5.0\ref\TestUnitarios.dll
+C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\TestUnitarios\bin\Debug\net5.0\ImportadorEgresos.json

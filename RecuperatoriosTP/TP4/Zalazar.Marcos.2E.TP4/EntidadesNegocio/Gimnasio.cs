@@ -168,6 +168,7 @@ namespace EntidadesNegocio
             });
         }
 
+
         /// <summary>
         /// Calcula el total de ingresos en función del valor de las cuotas
         /// </summary>
@@ -176,20 +177,11 @@ namespace EntidadesNegocio
         {
             int totalIngresos=0;
 
-            foreach (Socio socio in this.listaSocios)
+            for (int i = 0; i < periodoComercial.Ingresos.Count; i++)
             {
-                if (socio.SocioActivo == true)
-                {
-                    if (socio.Membresia == ECampos.EMembresia.Smart)
-                    {
-                        totalIngresos = totalIngresos + 1000;
-                    }
-                    else
-                    {
-                        totalIngresos = totalIngresos + 2000;
-                    }
-                }
+                totalIngresos = totalIngresos + periodoComercial.Ingresos[i].Importe;
             }
+
             return totalIngresos;
         }
 

@@ -68,7 +68,6 @@ C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\D
 C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.csproj.CopyComplete
 C:\Users\Marcos\Desktop\UTN tps\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\Debug\net5.0\SerializandoJson_listaEgresos.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\Debug\net5.0\MockSocio.xml
-C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\Debug\net5.0\SerializandoJson_listaEgresos.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.deps.json
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.dll
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\Debug\net5.0\EntidadesNegocio.pdb
@@ -84,3 +83,4 @@ C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\Entid
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\obj\Debug\net5.0\refint\EntidadesNegocio.dll
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\obj\Debug\net5.0\EntidadesNegocio.pdb
 C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\obj\Debug\net5.0\ref\EntidadesNegocio.dll
+C:\Users\Marcos\Desktop\UTN tps\RecuperatoriosTP\TP4\Zalazar.Marcos.2E.TP4\EntidadesNegocio\bin\Debug\net5.0\ImportadorEgresos.json

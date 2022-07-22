@@ -25,7 +25,7 @@ namespace Serializacion
         /// <exception cref="Exception"></exception>
         public static void Escribir(T datos, string nombre)
         {
-            string nombreArchivo = path + "SerializandoJson_" + nombre + ".js";
+            string nombreArchivo = path + "SerializandoJson_" + nombre + ".json";
 
             try
             {
