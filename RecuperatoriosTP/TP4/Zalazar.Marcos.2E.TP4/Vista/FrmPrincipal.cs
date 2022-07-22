@@ -38,6 +38,8 @@ namespace Vista
             this.gimnasio = new Gimnasio("Espartanos");
             this.primerArchivoSocio=AppDomain.CurrentDomain.BaseDirectory + "MockSocio.xml";
             this.gimnasio.NotificacionEnviada += InformarNecesidadDeProfesores;
+            this.btnLimpiarInforme.Enabled = false;
+            this.btnImprimirInforme.Enabled = false;
         }
 
         /// <summary>
@@ -392,16 +394,30 @@ namespace Vista
             CargarEgresosPorSalarios();
             ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
             this.rtbGestion.Text=this.gimnasio.InformacionGestion();
+
+            this.btnImportarEgresos.Enabled=false;
+            this.btnRegistrarEgresos.Enabled = false;
+            this.btnMostrarInfoGestion.Enabled = false;
+            this.btnLimpiarInforme.Enabled = true;
+            this.btnImprimirInforme.Enabled = true;
         }
 
         /// <summary>
-        /// Limpia el informe de gestion de la pantalla
+        /// Limpia el informe de gestion de la pantalla y de los archivos
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnLimpiarInforme_Click(object sender, EventArgs e)
         {
             this.rtbGestion.Text = "";
+            this.gimnasio.PeriodoComercial.Egresos.Clear();
+            this.gimnasio.PeriodoComercial.Ingresos.Clear();
+
+            this.btnImportarEgresos.Enabled = true;
+            this.btnRegistrarEgresos.Enabled = true;
+            this.btnMostrarInfoGestion.Enabled = true;
+            this.btnLimpiarInforme.Enabled = false;
+            this.btnImprimirInforme.Enabled = false;
         }
 
         /// <summary>
@@ -419,6 +435,8 @@ namespace Vista
                 this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, frmAgregarEgreso.DevolverEgreso);
                 MessageBox.Show("Egreso agregado", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
+            this.btnImportarEgresos.Enabled = false;
         }
 
         /// <summary>
@@ -428,6 +446,8 @@ namespace Vista
         /// <param name="e"></param>
         private void btnImportarEgresos_Click(object sender, EventArgs e)
         {
+            //this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, ClaseSerializadoraJson<List<Egreso>>.Leer("ImportadorEgresos.json"));
+            
             this.gimnasio.PeriodoComercial.Egresos=ClaseSerializadoraJson<List<Egreso>>.Leer("ImportadorEgresos.json");
             MessageBox.Show("Egreso importado con éxito", "Egresos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
@@ -455,6 +475,7 @@ namespace Vista
             {
                 MessageBox.Show("Error.No se pudo realizar la impresión del informe. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            this.btnImprimirInforme.Enabled= false;
         }
     }
 }
