@@ -120,11 +120,11 @@ namespace Vista
             }
             catch (PersonaException)
             {
-                MessageBox.Show("Error.El socio ya es miembro del gimnasio. Verifique los datos nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.El socio ya es miembro del gimnasio. Verifique los datos nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception)
             {
-                MessageBox.Show("Error.No se pudo realizar la carga del socio. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo realizar la carga del socio. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.gimnasio.EvaluarNecesidadDeProfesores();
         }
@@ -161,7 +161,7 @@ namespace Vista
             }
             catch (Exception) 
             {
-                MessageBox.Show("Error.No se pudo realizar la modificación del socio. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo realizar la modificación del socio. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -190,7 +190,7 @@ namespace Vista
             }
             catch (Exception) 
             {
-                MessageBox.Show("Error.No se pudo eliminar al socio. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo eliminar al socio. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.gimnasio.EvaluarNecesidadDeProfesores();
         }
@@ -246,11 +246,11 @@ namespace Vista
             }
             catch (PersonaException) 
             {
-                MessageBox.Show("Error.El profesor ya es parte del personal del gimnasio. Verifique los datos nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.El profesor ya es parte del personal del gimnasio. Verifique los datos nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception)
             {
-                MessageBox.Show("Error.No se pudo realizar la carga del profesor. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo realizar la carga del profesor. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             this.gimnasio.EvaluarNecesidadDeProfesores();
@@ -289,7 +289,7 @@ namespace Vista
             }
             catch (Exception)
             {
-                MessageBox.Show("Error.No se pudo realizar la modificación del profesor. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo realizar la modificación del profesor. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -319,7 +319,7 @@ namespace Vista
             }
             catch (Exception) 
             {
-                MessageBox.Show("Error.No se pudo eliminar al profesor. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo eliminar al profesor. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.gimnasio.EvaluarNecesidadDeProfesores();
         }
@@ -376,7 +376,7 @@ namespace Vista
             {
                 if (profesor.ProfesorActivo == true)
                 {
-                    Egreso egreso = new Egreso($"Salario del profesor {profesor.Nombre}", (int)profesor.Salario);
+                    Egreso egreso = new Egreso($"Salario del profesor {profesor.Nombre}", profesor.Salario);
                     this.gimnasio.PeriodoComercial.AgregarEgreso(this.gimnasio.PeriodoComercial, egreso);
                     ClaseSerializadoraJson<List<Egreso>>.Escribir(this.gimnasio.PeriodoComercial.Egresos, nombreArchivoEgreso);
                 }
@@ -406,7 +406,7 @@ namespace Vista
             }
             catch (Exception)
             {
-                MessageBox.Show("Error.No se pudo generar el informe. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo generar el informe. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -434,7 +434,7 @@ namespace Vista
             }
             catch (Exception)
             {
-                MessageBox.Show("Error.No se pudo borrar el informe. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo borrar el informe. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -458,7 +458,7 @@ namespace Vista
             }
             catch (Exception) 
             {
-                MessageBox.Show("Error.No se pudo registrar los egresos. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo registrar los egresos. Intente nuevamente", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             this.btnImportarEgresos.Enabled = false;
@@ -478,7 +478,7 @@ namespace Vista
             }
             catch (Exception)
             {
-                MessageBox.Show("Error.No se pudo importar los egresos. Revise el archivo", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo importar los egresos. Revise el archivo", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally 
             {
@@ -507,7 +507,7 @@ namespace Vista
             }
             catch (Exception) 
             {
-                MessageBox.Show("Error.No se pudo realizar la impresión del informe. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Error.No se pudo realizar la impresión del informe. Intente nuevamente ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             this.btnImprimirInforme.Enabled= false;
         }

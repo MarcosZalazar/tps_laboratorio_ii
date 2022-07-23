@@ -33,7 +33,7 @@ namespace EntidadesNegocio
                     string apellido = reader.GetString(2);
                     int sexo = reader.GetInt32(3);
                     DateTime fechaDeContratacion = reader.GetDateTime(4);
-                    decimal salario = reader.GetDecimal(5);
+                    int salario = reader.GetInt32(5);
                     int actividad = reader.GetInt32(6);
                     bool profesorActivo = reader.GetBoolean(7);
                     Profesor profesor = new Profesor(dni, nombre, apellido, (ECampos.ESexo)sexo, fechaDeContratacion, salario, (ECampos.Actividades)actividad);

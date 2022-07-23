@@ -14,12 +14,14 @@ namespace EntidadesNegocio
         public Gestion<Egreso,Ingreso> periodoComercial;
         public delegate void NotificadorNecesidadDeProfesores(string mensaje);
         public event NotificadorNecesidadDeProfesores NotificacionEnviada;
+
         public Gimnasio()
         {
             this.listaProfesores = new List<Profesor>();
             this.listaSocios = new List<Socio>();
             this.periodoComercial = new Gestion<Egreso, Ingreso>();
         }
+
         public Gimnasio(string nombre) : this()
         {
             this.nombre = nombre;

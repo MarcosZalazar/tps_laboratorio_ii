@@ -58,7 +58,7 @@ namespace Vista
                 if (this.ValidarTodosLosCampos())
                 {
                     int dniIngresado = int.Parse(this.txtDniProf.Text);
-                    decimal salarioIngresado = decimal.Parse(this.txtSalarioProf.Text);
+                    int salarioIngresado = int.Parse(this.txtSalarioProf.Text);
 
                     if (this.profesor is null)
                     {

@@ -13,7 +13,7 @@ namespace EntidadesNegocio
         protected string apellido;
         protected ECampos.ESexo sexo;
         protected DateTime fechaDeContratacion;
-        protected decimal salario;
+        protected int salario;
         protected ECampos.Actividades actividad;
         protected bool profesorActivo;
 
@@ -21,7 +21,8 @@ namespace EntidadesNegocio
         {
 
         }
-        public Profesor(int dni, string nombre, string apellido, ECampos.ESexo sexo, DateTime fechaDeContratacion, decimal salario, ECampos.Actividades actividad)
+
+        public Profesor(int dni, string nombre, string apellido, ECampos.ESexo sexo, DateTime fechaDeContratacion, int salario, ECampos.Actividades actividad)
         {
             this.dni = dni;
             this.nombre = nombre;
@@ -110,7 +111,7 @@ namespace EntidadesNegocio
         /// <summary>
         /// Propiedad que asigna y devuelve el salario del profesor
         /// </summary>
-        public decimal Salario
+        public int Salario
         {
             get
             {
