@@ -13,4 +13,43 @@
     </ListaActividades>
     <SocioActivo>true</SocioActivo>
   </Socio>
+  <Socio>
+    <DniSocio>31661765</DniSocio>
+    <Nombre>Miguel</Nombre>
+    <Apellido>Rodriguez</Apellido>
+    <Sexo>Masculino</Sexo>
+    <FechaDeAlta>2008-06-05T22:24:04.5159858-03:00</FechaDeAlta>
+    <Membresia>Smart</Membresia>
+    <ListaActividades>
+      <Actividades>Aerobics</Actividades>
+      <Actividades>Spinning</Actividades>
+    </ListaActividades>
+    <SocioActivo>true</SocioActivo>
+  </Socio>
+  <Socio>
+    <DniSocio>31661764</DniSocio>
+    <Nombre>Laura</Nombre>
+    <Apellido>Lopez</Apellido>
+    <Sexo>Femenino</Sexo>
+    <FechaDeAlta>2010-06-05T22:24:04.5159858-03:00</FechaDeAlta>
+    <Membresia>Smart</Membresia>
+    <ListaActividades>
+      <Actividades>Pilates</Actividades>
+      <Actividades>Yoga</Actividades>
+    </ListaActividades>
+    <SocioActivo>true</SocioActivo>
+  </Socio>
+  <Socio>
+    <DniSocio>31661763</DniSocio>
+    <Nombre>Leandro</Nombre>
+    <Apellido>Paredes</Apellido>
+    <Sexo>Masculino</Sexo>
+    <FechaDeAlta>2009-06-05T22:24:04.5159858-03:00</FechaDeAlta>
+    <Membresia>Black</Membresia>
+    <ListaActividades>
+      <Actividades>Aerobics</Actividades>
+      <Actividades>Yoga</Actividades>
+    </ListaActividades>
+    <SocioActivo>true</SocioActivo>
+  </Socio>
 </ArrayOfSocio>

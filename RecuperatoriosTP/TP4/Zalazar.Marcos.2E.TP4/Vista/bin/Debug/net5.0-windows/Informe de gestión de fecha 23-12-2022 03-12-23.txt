@@ -1,9 +1,0 @@
-Total de socios Black: 4  
-Total de socios Smart: 2  
-Total de socios: 6  
----------------------------------------------------
-Total de ingresos: 10000  
-Total de egresos: 8623  
-Resultado del mes: 1377  
----------------------------------------------------
-
